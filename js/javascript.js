@@ -41,7 +41,7 @@ document.querySelectorAll(".reveal").forEach(function (r){
 
 const title = document.querySelector('.titreanim');
 
-let txt = " Computer Science Student.";
+let txt = " Étudiant en Informatique.";
 let nbr = 0;
 
 
@@ -57,22 +57,25 @@ function effacer(){
     } else {
       if(nbr==0){
         nbr++;
-        txt = " Front-End Developer.";
+        txt = " Développeur Front-End.";
       } else if (nbr==1){
         nbr++;
-        txt = " Back-End Developer.";
+        txt = " Développeur Back-End.";
       } else if (nbr==2){
         nbr++;
-        txt = " Unity Developer.";
+        txt = " Développeur Unity.";
       } else if (nbr==3){
         nbr++;
         txt = " Community Manager.";
       } else if (nbr==4){
         nbr++;
-        txt = " Software Developer.";
+        txt = " Développeur de Logiciels.";
       } else if (nbr==5){
+        nbr++;
+        txt = " Développeur de sites Web.";
+      } else if (nbr==6){
         nbr=0;
-        txt = " Computer Science Student.";
+        txt = " Étudiant en Informatique.";
       }
       setTimeout(() => {
         typewriter(txt, 0)
